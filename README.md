@@ -88,9 +88,68 @@ The project is divided into several key steps, each corresponding to specific de
 * **campaign.csv** : CSV file containing the campaign data.
 * **contacts.csv** : CSV file containing the contacts data.
 * **crowdfunding_db_schema.sql** : SQL file with the database schema.
+* **crowdfunding_db_ERD_sketch**: PNG file with the QuickDBD ERD sketch.
+* **crowdfunding_db_ERD_pgAdmin**: PNG file with the final pgAdmin ERD.
+* **category_tb_Screenshot**: PNG file with the select statement run to verify `category` table has the correct data.
+* **subcategory_tb_Screensho**t: PNG file with the select statement run to verify `subcategory` table has the correct data.
+* **contacts_tb_Screenshot**: PNG file with the select statement run to verify `contacts` table has the correct data.
+* **campaign_tb_Screenshot**: PNG file with the select statement run to verify `campaign` table has the correct data.
 * **Resources** : Folder containing the original Excel files (`crowdfunding.xlsx` and `contacts.xlsx`).
 
 ## Contributors
 
 * Gedlegeorgis Gobezie Geda
 * Ria Arora
+
+## Tasks
+
+Based on the requirements provided, the work divided between **Ria Arora** and **Gedlegeorgis Geda** to efficiently complete the tasks:
+
+### **Tasks for Ria Arora:**
+
+1. **Create and Export Category DataFrame:**
+
+* Extract and transform the `crowdfunding.xlsx` excel data to create a category DataFrame
+* Split `category & sub-category` **column to `category`** and `subcategory` columns.
+* Create a DataFrame named `category_df` with columns `category_id` and ` category` .
+* Ensure `category_id` contains sequential entries from `cat1` to ` catn`.
+* Populate the `category` column with category titles.
+* Export `category_df` as ` category.csv` .
+
+2. **Create and Export Subcategory DataFrame:**
+
+* Create a DataFrame named `subcategory_df` with columns `subcategory_id` and ` subcategory`.
+* Ensure `subcategory_id` contains sequential entries from `subcat1` to ` subcatn`.
+* Populate the `subcategory` column with subcategory titles.
+* Export `subcategory_df` as `subcategory.csv`.
+
+3. **Sketch Crowdfunding Database ERD:**
+
+* Inspect the four CSV files, and then sketch an ERD of the tables by using `**QuickDBD**`.
+* Export the screenshot of sketched ERD `crowdfunding_db_ERD_sketch.png`.
+
+### **Tasks for Gedlegeorgis Geda:**
+
+1. **Create and Export Campaign DataFrame:**
+
+* Extract and transform the `crowdfunding.xlsx` Excel data to create a campaign DataFrame
+* Create a DataFrame named `campaign_df` with the specified columns.
+* Transform `campaign_df` to have the following columns:
+* Rename the ` blurb`, `launched_at`**,** and `deadline` columns.
+* Convert the `goal` and `pledged` columns to a `float` data type.
+* Format the `launch_date` and `end_date` columns to datetime format.
+* Merge the `campaign_df` with the `category_df` on the "category" column and the `subcategory_df` on the "subcategory" column.
+* Drop unwanted columns.
+* Export `campaign_df` as `campaign.csv`.
+
+2. **Create and Export Contacts DataFrame:**
+
+* Create a DataFrame named `contacts_df` with columns `contact_id`, `first_name` , `last_name`, and `email`.
+* Populate the DataFrame with sample data.
+* Export `contacts_df` as `contacts_csv`.
+
+3. **Create Crowdfunding Database and Import Data:**
+
+* Create a database named `crowdfunding_db` using `crowdfunding_db_schema.sql`.
+* Import each CSV file into the appropriate table in the database.
+* Display the data from each table using a SELECT * statement.
