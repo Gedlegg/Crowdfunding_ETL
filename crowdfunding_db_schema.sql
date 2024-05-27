@@ -1,15 +1,19 @@
+-- Create a new database
 CREATE DATABASE crowdfunding_db;
 
+-- Create a new table `category`
 CREATE TABLE category (
   category_id VARCHAR PRIMARY KEY,
   category VARCHAR NOT NULL
 );
 
+-- Create a new table `subcategory`
 CREATE TABLE subcategory (
   subcategory_id VARCHAR PRIMARY KEY,
   subcategory VARCHAR NOT NULL
 );
 
+-- Create a new table `contacts`
 CREATE TABLE contacts (
   contact_id INT PRIMARY KEY,
   first_name VARCHAR NOT NULL,
@@ -17,6 +21,7 @@ CREATE TABLE contacts (
   email VARCHAR NOT NULL
 );
 
+-- Create a new table `campaign`
 CREATE TABLE campaign (
   cf_id INT PRIMARY KEY,
   contact_id INT REFERENCES contacts(contact_id),
