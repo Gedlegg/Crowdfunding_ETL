@@ -82,19 +82,20 @@ The project is divided into several key steps, each corresponding to specific de
 
 ## File Structure
 
-* **ETL_Mini_Project_YourInitials.ipynb** : Jupyter notebook with all ETL steps.
+* **ETL_Mini_Project_GGeda_RArora.ipynb** : Jupyter notebook with all ETL steps located in `Crowdfunding_ETL` folder.
 * **category.csv** : CSV file containing the category data.
 * **subcategory.csv** : CSV file containing the subcategory data.
 * **campaign.csv** : CSV file containing the campaign data.
 * **contacts.csv** : CSV file containing the contacts data.
-* **crowdfunding_db_schema.sql** : SQL file with the database schema.
-* **crowdfunding_db_ERD_sketch**: PNG file with the QuickDBD ERD sketch.
-* **crowdfunding_db_ERD_pgAdmin**: PNG file with the final pgAdmin ERD.
-* **category_tb_Screenshot**: PNG file with the select statement run to verify `category` table has the correct data.
-* **subcategory_tb_Screensho**t: PNG file with the select statement run to verify `subcategory` table has the correct data.
-* **contacts_tb_Screenshot**: PNG file with the select statement run to verify `contacts` table has the correct data.
-* **campaign_tb_Screenshot**: PNG file with the select statement run to verify `campaign` table has the correct data.
-* **Resources** : Folder containing the original Excel files (`crowdfunding.xlsx` and `contacts.xlsx`).
+* **crowdfunding_db_schema.sql** : SQL file with the database schema located in `Crowdfunding_ETL` folder.
+* **crowdfunding_db_ERD_sketch**: PNG file with the QuickDBD ERD sketch located in `images` folder.
+* **crowdfunding_db_ERD_pgAdmin**: PNG file with the final pgAdmin ERD located in `images` folder.
+* **category_tb_Screenshot**: PNG file with the select statement run to verify `category` table has the correct data located in `images` folder.
+* **subcategory_tb_Screensho**t: PNG file with the select statement run to verify `subcategory` table has the correct data located in `images` folder.
+* **contacts_tb_Screenshot**: PNG file with the select statement run to verify `contacts` table has the correct data located in `images` folder.
+* **campaign_tb_Screenshot**: PNG file with the select statement run to verify `campaign` table has the correct data located in `images` folder.
+* **Resources** : Folder containing the original Excel files (`crowdfunding.xlsx` and `contacts.xlsx`) located in `Crowdfunding_ETL` folder.
+* **Images**: Folder containing the screenshot files (`category_tb_Screenshotg.png`, `subcategory_tb_Screenshotg.png`, `contacts_tb_Screenshotg.png`, `campaign_tb_Screenshotg.png` , `crowdfunding_db_ERD_sketch.png` and `crowdfunding_db_ERD_pgAdmin.png`) located in `Crowdfunding_ETL` folder.
 
 ## Contributors
 
